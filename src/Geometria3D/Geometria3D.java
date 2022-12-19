@@ -1,9 +1,18 @@
 package Geometria3D;
 public abstract class Geometria3D {
 
-    protected abstract double area();
-    protected abstract double volumen();
+    protected double area, volumen;
 
+    protected abstract void area();
+
+    protected abstract void volumen();
+
+    public double getArea() {
+        return area;
+    }
+    public double getVolumen() {
+        return volumen;
+    }
 
 
 }
