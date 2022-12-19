@@ -1,7 +1,7 @@
 package Geometria2D;
 
-public class Pentagono {
-    private double lado, apotema;
+public class Pentagono extends Geometria2D{
+
     private int numlados=5;
     
 

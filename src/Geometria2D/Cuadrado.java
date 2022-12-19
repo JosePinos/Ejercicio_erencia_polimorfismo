@@ -1,7 +1,8 @@
 package Geometria2D;
 
-public class Cuadrado {
-     private double lado;
+public class Cuadrado  extends Geometria2D{
+
+
 
     //perimetro area diamtetro
 

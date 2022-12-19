@@ -1,7 +1,7 @@
 package Geometria2D;
 
-public class Rectangulo {
-    private double  base, altura;
+public class Rectangulo extends Geometria2D {
+
 
     
     public double Area_Rec(double base1, double altura1){

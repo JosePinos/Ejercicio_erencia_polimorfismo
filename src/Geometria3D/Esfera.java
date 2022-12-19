@@ -1,16 +1,20 @@
 package Geometria3D;
-
-public class Esfera {
+import Geometria3D.Geometria3D;
+public class Esfera extends Geometria3D {
     private double Radio;
     private final double Pi = 3.14;
 
-    public double area (double radio){
+    @Override
+    //protected double area (double radio){
+    protected double area (double radio){
         Radio = radio;
         return 4 * Pi * (Math.pow(Radio, 2));
 
     }
 
-    public double volumen ( double radio){
+    @Override
+    //protected double volumen ( double radio){
+    protected double volumen (){
         Radio = radio;
         return (4 * Pi * (Math.pow(Radio,3)))/3;
     }
