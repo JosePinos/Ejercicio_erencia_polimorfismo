@@ -1,4 +1,4 @@
-
+/*
 //Scanner
 import java.util.Scanner;
 
@@ -499,4 +499,19 @@ public class Main {
     }
 
 
+}
+*/
+
+
+import Geometria3D.*;
+public class Main {
+    public static void main(String[] args) {
+
+        Esfera esferita = new Esfera(10);
+
+        System.out.println("Radio: " + esferita.getRadio());
+        System.out.println("Area: " + esferita.getArea());
+
+
+    }
 }
