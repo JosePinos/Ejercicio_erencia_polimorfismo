@@ -1,8 +1,8 @@
 package Geometria3D;
-import Geometria3D.Geometria3D;
+
 public class Esfera extends Geometria3D {
     private double Radio;
-    private final double Pi = 3.14;
+   
 
     public Esfera(double radio){
         Radio = radio;
@@ -10,7 +10,7 @@ public class Esfera extends Geometria3D {
         volumen();
     }
 
-    public double getRadio() {
+    private double getRadio() {
         return Radio;
     }
 
@@ -20,13 +20,13 @@ public class Esfera extends Geometria3D {
 
     @Override
     protected void area (){
-        area = 4 * Pi * (Math.pow(getRadio(), 2));
+        area = 4 * (Math.PI) * (Math.pow(getRadio(), 2));
     }
 
 
     @Override
     protected void volumen (){
-        volumen = (4 * Pi * (Math.pow(getRadio(),3)))/3;
+        volumen = (4 * (Math.PI) * (Math.pow(getRadio(),3)))/3;
     }
     
 }
