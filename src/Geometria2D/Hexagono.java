@@ -1,8 +1,8 @@
 package Geometria2D;
 
-public class Hexagono {
+public class Hexagono extends Geometria2D{
 
-    private double lado, apotema;
+
     private int numlados=6;
    
 

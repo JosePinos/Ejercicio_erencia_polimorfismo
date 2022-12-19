@@ -1,10 +1,10 @@
 package Geometria2D;
 
-public class Heptagono {
+public class Heptagono  extends Geometria2D{
 
-    private double lado, apotema;
+
     private int numlados=7;
-    private  final double Pi = 3.14;
+
     
     public double perimetro (double lado1){
         lado = lado1;
@@ -18,7 +18,7 @@ public class Heptagono {
     }
     public double apotema (double lado1 ){
         lado = lado1;
-        return (lado/2)*((Math.sin((5 * Pi)/14))/((Math.sin(Pi/7))/7));
+        return (lado/2)*((Math.sin((5 * (Math.PI))/14))/((Math.sin((Math.PI)/7))/7));
     }
     
 }
