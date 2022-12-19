@@ -1,7 +1,7 @@
 package Geometria2D;
 
-public class Triangulo {
-    private double lado, base, altura;
+public class Triangulo extends Geometria2D{
+
 
     
     public double area (double base1, double altura1){

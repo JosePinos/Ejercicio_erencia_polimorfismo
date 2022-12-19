@@ -1,7 +1,7 @@
 package Geometria2D;
 
-public class Decagono {
-    private double lado, apotema;
+public class Decagono extends  Geometria2D{
+
     private int numlados=10;
     
 

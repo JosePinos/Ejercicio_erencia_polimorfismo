@@ -1,7 +1,6 @@
 package Geometria2D;
 
-public class Endecagono {
-    private double lado, apotema;
+public class Endecagono extends Geometria2D {
     private  final int numlados=11;
 
    public double area (double lado1, double apotema1){
@@ -15,7 +14,8 @@ public class Endecagono {
        return 11 * lado;
    }
    public double angulos_interiores (){
-    return 180 * (numlados - 2); 
+
+       return 180 * (numlados - 2);
    }
 
 
