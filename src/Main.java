@@ -40,9 +40,9 @@ public class Main {
     private static Triangulo triangulo = new Triangulo();
 
     //Figuras 3D
-    private static Casquete casquete = new Casquete();
-    private static Cilindros cilindros = new Cilindros();
-    private static Cono cono = new Cono();
+
+
+
     private static Cubos cubo = new Cubos();
    
     private static Octahedro octahedro = new Octahedro();
@@ -244,22 +244,19 @@ public class Main {
                         System.out.println("Casquete");
                         System.out.println("Ingrese el radio del circulo del casquete");
                         radio1 = sn.nextDouble();
-                        System.out.println("Ingrese el radio del ciruclo del casquete");
+                        System.out.println("Ingrese el radio2 del ciruclo del casquete");
                         radio2 = sn.nextDouble();
                         System.out.println("Ingrese la altura del casquete");
                         altura = sn.nextDouble();
+                        Casquete casquete = new Casquete(radio1,radio2,altura);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(casquete.Calcular_Area_Casquete(radio1, altura));
+                        System.out.println(casquete.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(casquete.Volumen_Casquete(radio1, altura));
+                        System.out.println(casquete.getVolumen());
                         System.out.println("");
-                        System.out.println("Radio del casquete");
-                        System.out.println(casquete.Radido_Casquete(radio2, altura));
-
-
                     }
 
                     else if (opcion3 == 2){
@@ -268,17 +265,18 @@ public class Main {
                         radio1 = sn.nextDouble();
                         System.out.println("Ingrese la altura del cilindro");
                         altura = sn.nextDouble();
+                        Cilindros cilindros = new Cilindros(radio1,altura);
 
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(cilindros.area(radio1, altura));
+                        System.out.println(cilindros.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(cilindros.volumen(radio1, altura));
+                        System.out.println(cilindros.getVolumen());
                         System.out.println("");
                         System.out.println("Superficie lateral");
-                        System.out.println(cilindros.superficie_latera(radio1, altura));
+                        System.out.println(cilindros.superficie_latera(radio1,altura));
 
                     }
                     else if (opcion3 == 3) {
@@ -289,16 +287,17 @@ public class Main {
                         altura_inclinada = sn.nextDouble();
                         System.out.println("Ingrese la altura del cono");
                         altura = sn.nextDouble();
+                        Cono cono = new Cono(radio1,altura_inclinada,altura);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(cono.Area(radio1, altura_inclinada));
+                        System.out.println(cono.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(cono.Volumen(radio1, altura));
+                        System.out.println(cono.getVolumen());
                         System.out.println("");
                         System.out.println("Superficie lateral");
-                        System.out.println(cono.superficie_latera(radio1, altura));
+                        System.out.println(cono.superficie_latera(radio1,altura));
 
                     }
                     else if (opcion3 == 4) {
