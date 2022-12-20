@@ -42,11 +42,6 @@ public class Main {
     //Figuras 3D
 
 
-   
-
-    private static Piramide piramide = new Piramide();
-    private static Prisma_Triangular prisma_triangular = new Prisma_Triangular();
-    private static Prismas_Rectangular prisma_rectangular = new Prismas_Rectangular();
     private static Tetrahedro tetrahedro = new Tetrahedro();
 
     //SCANNER
@@ -352,13 +347,14 @@ public class Main {
                         lado = sn.nextDouble();
                         System.out.println("Ingrese la altura de su piramide");
                         altura = sn.nextDouble();
+                        Piramide piramide = new Piramide(lado,altura);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(piramide.area(lado, altura));
+                        System.out.println(piramide.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(piramide.volumen(lado, altura));
+                        System.out.println(piramide.getVolumen());
                         System.out.println("");
                         System.out.println("Superficie");
                         System.out.println(piramide.superficie_latera(lado, altura));
@@ -370,13 +366,14 @@ public class Main {
                         lado = sn.nextDouble();
                         System.out.println("Ingrese la altura de su prisma");
                         altura = sn.nextDouble();
+                        Prisma_Triangular prisma_triangular = new Prisma_Triangular(lado,altura);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(prisma_triangular.area(lado, altura));
+                        System.out.println(prisma_triangular.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(prisma_triangular.volumen(lado, altura));
+                        System.out.println(prisma_triangular.getVolumen());
                         System.out.println("");
 
                     }
@@ -388,13 +385,14 @@ public class Main {
                         base2 = sn.nextDouble();
                         System.out.println("Ingrese la altura del casquete");
                         altura = sn.nextDouble();
+                        Prismas_Rectangular prisma_rectangular = new Prismas_Rectangular(base1,base2,altura);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(prisma_rectangular.area(base1, base2, altura));
+                        System.out.println(prisma_rectangular.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(prisma_rectangular.volumen(base1, base2, altura));
+                        System.out.println(prisma_rectangular.getVolumen());
                         System.out.println("");
 
                     }
