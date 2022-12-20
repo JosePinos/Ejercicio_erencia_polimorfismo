@@ -1,19 +1,31 @@
 package Geometria3D;
 
-public class Prisma_Triangular {
+public class Prisma_Triangular extends Geometria3D{
     private double Lado, Altura;
 
-    public double area (double lado, double altura){
+    public Prisma_Triangular(double lado, double altura) {
         Lado = lado;
         Altura = altura;
-
-        return Lado *((3*Altura) + ((Lado * Math.sqrt(3))/2));
+        area();
+        volumen();
     }
-    public double volumen (double lado, double altura){
-        Lado = lado;
-        Altura = altura;
-        return  (Altura * (Math.pow(Lado, 2)) * (Math.sqrt(3)))/4;
 
+    public double getLado() {
+        return Lado;
+    }
+
+    public double getAltura() {
+        return Altura;
+    }
+
+    @Override
+    protected void area (){
+        area = getLado() *((3*getAltura()) + ((getLado() * Math.sqrt(3))/2));
+    }
+
+    @Override
+    protected void volumen (){
+        volumen =  (getAltura() * (Math.pow(getLado(), 2)) * (Math.sqrt(3)))/4;
     }
     
     

@@ -1,19 +1,30 @@
 package Geometria3D;
 
-public class Tetrahedro {
-    private double Lado, Altura; 
+public class Tetrahedro extends Geometria3D{
+    private double Lado, Altura;
 
-    public double area (double lado, double altura){
+    public Tetrahedro(double lado, double altura) {
         Lado = lado;
         Altura = altura;
-        return ((Lado/2))* (((Math.sqrt(3))/2)* Lado * 3 * ((Math.sqrt((Math.pow(Lado, 2))* (3/36) + (Math.pow(Altura,2))))));
-
+        area();
+        volumen();
     }
-    public double volumen(double lado, double altura){
-        Lado = lado;
-        Altura = altura;
 
-        return Altura * (Math.pow(Lado, 2)) * ((Math.sqrt(3))/12);
+    public double getLado() {
+        return Lado;
+    }
+    public double getAltura() {
+        return Altura;
+    }
 
+
+    @Override
+    protected void area (){
+        area = ((getLado()/2))* (((Math.sqrt(3))/2)* getLado() * 3 * ((Math.sqrt((Math.pow(getLado(), 2))* (3/36) + (Math.pow(getAltura(),2))))));
+    }
+
+    @Override
+    protected void volumen(){
+        volumen = getAltura() * (Math.pow(getLado(), 2)) * ((Math.sqrt(3))/12);
     }
 }

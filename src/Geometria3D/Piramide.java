@@ -1,26 +1,36 @@
 package Geometria3D;
 
-public class Piramide {
+public class Piramide extends Geometria3D{
     private double Lado, Altura;
 
-    public double area (double lado , double altura){
+    public Piramide(double lado, double altura) {
         Lado = lado;
         Altura = altura;
-        return Lado * (Lado + Math.sqrt((4 * Altura) + (Math.pow(Lado, 2))));
-
-
+        area();
+        volumen();
     }
 
-    public double volumen (double lado, double altura){
-        Lado = lado;
-        Altura = altura;
-        return ((Math.pow(Lado, 2)) * Altura)/3;
+
+    public double getLado() {
+        return Lado;
+    }
+    public double getAltura() {
+        return Altura;
+    }
+
+    @Override
+    protected void area (){
+        area = getLado() * (getLado() + Math.sqrt((4 * getAltura()) + (Math.pow(getLado(), 2))));
+    }
+    @Override
+    protected void volumen (){
+        volumen = ((Math.pow(getLado(), 2)) * getAltura())/3;
     }
 
     public double superficie_latera (double lado, double altura){
         Lado = lado;
         Altura = altura;
-        return (1/2) * (3 * Lado) * Altura;
+        return (1/2.0) * (3 * Lado) * Altura;
     }
     
 }

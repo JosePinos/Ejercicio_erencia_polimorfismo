@@ -1,26 +1,38 @@
 package Geometria3D;
 
-public class Cilindros {
+public class Cilindros extends  Geometria3D{
     private double Radio, Altura;
-    private final double Pi = 3.14;
 
 
-    public double area (double radio, double altura){
+    public Cilindros(double radio, double altura) {
         Radio = radio;
         Altura = altura;
-        return  2 * Pi * Radio * (Radio + Altura);
-
+        area();
+        volumen();
     }
-    public double volumen (double radio, double altura){
-        Radio = radio;
-        Altura = altura;
-        return Pi * (Math.pow(Radio, 2)) * Altura;
+
+    public double getRadio() {
+        return Radio;
+    }
+    public double getAltura() {
+        return Altura;
+    }
+
+
+    @Override
+    protected void area (){
+        area = 2 * Math.PI * getRadio() * (getRadio() + getAltura());
+    }
+
+    @Override
+    protected void volumen (){
+        volumen = Math.PI * (Math.pow(getRadio(), 2)) * getAltura();
     }
 
     public double superficie_latera(double radio, double altura){
         Radio = radio;
         Altura = altura;
-        return 2 * Pi * Radio * Altura;
+        return 2 * Math.PI * Radio * Altura;
 
     }
 

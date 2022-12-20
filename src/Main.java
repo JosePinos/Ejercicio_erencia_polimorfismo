@@ -44,7 +44,7 @@ public class Main {
     private static Cilindros cilindros = new Cilindros();
     private static Cono cono = new Cono();
     private static Cubos cubo = new Cubos();
-    private static Esfera esfera = new Esfera();
+   
     private static Octahedro octahedro = new Octahedro();
     private static Piramide piramide = new Piramide();
     private static Prisma_Triangular prisma_triangular = new Prisma_Triangular();
@@ -64,7 +64,7 @@ public class Main {
                 int opcion2 = menu_Geometria2D();
                 while (opcion2 !=11){
 
-                    if (opcion == 1) {
+                    if (opcion2 == 1) {
                         System.out.println("Circulo");
                         System.out.println("Ingrese el radio del circulo ");
                         radio1 = sn.nextDouble();
@@ -81,7 +81,7 @@ public class Main {
                         System.out.println(circulo.Perimetro_Cir(radio1));
                     }
 
-                    else if (opcion == 2) {
+                    else if (opcion2 == 2) {
                         System.out.println("Cuadrado");
                         System.out.println("Ingrese el valor  de un lado de su cuadrado ");
                         lado = sn.nextDouble();
@@ -97,7 +97,7 @@ public class Main {
 
 
 
-                    } else if (opcion == 3) {
+                    } else if (opcion2 == 3) {
                         System.out.println("Decagono");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -114,7 +114,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(decagono.perimetro(lado));
 
-                    } else if (opcion == 4) {
+                    } else if (opcion2 == 4) {
                         System.out.println("Endecagono");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -131,7 +131,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(endecagono.perimetro(lado));
 
-                    } else if (opcion == 5) {
+                    } else if (opcion2 == 5) {
                         System.out.println("Heptagono");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -148,7 +148,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(heptagono.perimetro(lado));
 
-                    } else if (opcion == 6) {
+                    } else if (opcion2 == 6) {
                         System.out.println("Hexagono");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -165,7 +165,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(hexagono.perimetro(lado));
 
-                    } else if (opcion == 7) {
+                    } else if (opcion2 == 7) {
                         System.out.println("Octogono");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -182,7 +182,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(octogono.perimetro(lado));
 
-                    } else if (opcion == 8) {
+                    } else if (opcion2 == 8) {
                         System.out.println("Pentagono");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -199,7 +199,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(pentagono.Perimetro_Pent(lado));
 
-                    } else if (opcion == 9) {
+                    } else if (opcion2 == 9) {
                         System.out.println("Rectangulo");
                         System.out.println("Ingrese el valor de su base ");
                         base1 = sn.nextDouble();
@@ -215,7 +215,7 @@ public class Main {
                         System.out.println("Perimetro");
                         System.out.println(rectangulo.Perimetro_Rec(base1, altura));
 
-                    } else if (opcion == 10) {
+                    } else if (opcion2 == 10) {
                         System.out.println("Triangulo");
                         System.out.println("Ingrese el valor de su lado ");
                         lado = sn.nextDouble();
@@ -240,7 +240,7 @@ public class Main {
                 int opcion3 = menu_Geometria3D();
                 while (opcion3 != 11){
 
-                    if (opcion == 1){
+                    if (opcion3 == 1){
                         System.out.println("Casquete");
                         System.out.println("Ingrese el radio del circulo del casquete");
                         radio1 = sn.nextDouble();
@@ -262,8 +262,8 @@ public class Main {
 
                     }
 
-                    else if (opcion == 2){
-                        System.out.println("cilindro");
+                    else if (opcion3 == 2){
+                        System.out.println("Cilindro");
                         System.out.println("Ingrese el radio del cilindro");
                         radio1 = sn.nextDouble();
                         System.out.println("Ingrese la altura del cilindro");
@@ -281,7 +281,7 @@ public class Main {
                         System.out.println(cilindros.superficie_latera(radio1, altura));
 
                     }
-                    else if (opcion == 3) {
+                    else if (opcion3 == 3) {
                         System.out.println("Cono");
                         System.out.println("Ingrese el radio del cono");
                         radio1 = sn.nextDouble();
@@ -301,7 +301,7 @@ public class Main {
                         System.out.println(cono.superficie_latera(radio1, altura));
 
                     }
-                    else if (opcion == 4) {
+                    else if (opcion3 == 4) {
                         System.out.println("Cubo");
                         System.out.println("Ingrese el cuanto vale el lado de su cubo");
                         lado = sn.nextDouble();
@@ -317,22 +317,23 @@ public class Main {
                         System.out.println(cubo.superficie(lado));
 
                     }
-                    else if (opcion == 5) {
+                    else if (opcion3 == 5) {
                         System.out.println("Esfera");
                         System.out.println("Ingrese el radio del circulo de la esfera");
                         radio1 = sn.nextDouble();
+                        Esfera esfera = new Esfera(radio1);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(esfera.area(radio1));
+                        System.out.println(esfera.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(esfera.volumen(radio1));
+                        System.out.println(esfera.getVolumen());
                         System.out.println("");
 
 
                     }
-                    else if (opcion == 6) {
+                    else if (opcion3 == 6) {
                         System.out.println("Octaedro");
                         System.out.println("Ingrese el cuanto vale el lado de su octaedro");
                         lado = sn.nextDouble();
@@ -348,7 +349,7 @@ public class Main {
                         System.out.println(octahedro.volumen(lado));
 
                     }
-                    else if (opcion == 7) {
+                    else if (opcion3 == 7) {
                         System.out.println("Piramide");
                         System.out.println("Ingrese el cuanto vale el lado de su piramide");
                         lado = sn.nextDouble();
@@ -366,7 +367,7 @@ public class Main {
                         System.out.println(piramide.superficie_latera(lado, altura));
 
                     }
-                    else if (opcion == 8) {
+                    else if (opcion3 == 8) {
                         System.out.println("Prisma triangular");
                         System.out.println("Ingrese el cuanto vale el lado de su prisma");
                         lado = sn.nextDouble();
@@ -382,7 +383,7 @@ public class Main {
                         System.out.println("");
 
                     }
-                    else if (opcion == 9) {
+                    else if (opcion3 == 9) {
                         System.out.println("Prisma rectangular");
                         System.out.println("Ingrese la base 1 de su prisma rectangular");
                         base1 = sn.nextDouble();
@@ -400,7 +401,7 @@ public class Main {
                         System.out.println("");
 
                     }
-                    else if (opcion == 10) {
+                    else if (opcion3 == 10) {
                         System.out.println("Tetraedro");
                         System.out.println("Ingrese el cuanto vale el lado de su tetraedro");
                         lado = sn.nextDouble();
@@ -442,7 +443,7 @@ public class Main {
             opcion = sn.nextInt();
 
             if (opcion < 1 || opcion > 3){
-                System.out.println("Ingrese valores entre 1 y 3");
+                System.out.println("Ingrese valores entre 1 y 11");
             }
         }
         return opcion;
@@ -467,7 +468,7 @@ public class Main {
             opcion = sn.nextInt();
 
             if (opcion < 1 || opcion > 11){
-                System.out.println("Ingrese valores entre 1 y 3");
+                System.out.println("Ingrese valores entre 1 y 11");
             }
         }
         return opcion;
@@ -492,7 +493,7 @@ public class Main {
             opcion = sn.nextInt();
 
             if (opcion < 1 || opcion > 11){
-                System.out.println("Ingrese valores entre 1 y 3");
+                System.out.println("Ingrese valores entre 1 y 11");
             }
         }
         return opcion;
@@ -500,3 +501,4 @@ public class Main {
 
 
 }
+
