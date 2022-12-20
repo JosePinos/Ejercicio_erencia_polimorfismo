@@ -11,12 +11,12 @@ public class Casquete extends Geometria3D{
     private double Radio_Casquete;
     private double Altura_Casquete;
 
-
+    //constructor
     public Casquete(double radio_Circulo, double radio_Casquete, double altura_Casquete) {
         Radio_Circulo = radio_Circulo;
         Radio_Casquete = radio_Casquete;
         Altura_Casquete = altura_Casquete;
-        area();
+        area(); // pasamos dentro nuestro constructor nuestras funciones
         volumen();
     }
 
@@ -36,7 +36,7 @@ public class Casquete extends Geometria3D{
 
 
 
-
+    //sobre escritura de las funciones que predefinimos en nuestro objeto padre
     @Override
     protected  void area( ){
         area =  2 * Math.PI * getRadio_Circulo() * getAltura_Casquete();
@@ -49,7 +49,7 @@ public class Casquete extends Geometria3D{
     }
 
 
-
+    //funcion propia del casquete lo mismo sucede con las demas clases
     public double Radido_Casquete ( double RadioCasquete, double AlturaCasquete){
         Radio_Casquete  = RadioCasquete;
         Altura_Casquete = AlturaCasquete;
