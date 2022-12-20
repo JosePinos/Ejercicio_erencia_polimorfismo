@@ -41,6 +41,10 @@ public class Main {
     private static Rectangulo rectangulo = new Rectangulo();
     private static Triangulo triangulo = new Triangulo();
 
+<<<<<<< HEAD
+=======
+    //Figuras 3D
+>>>>>>> 3deffbb44d1bb178c1d0aa7d15a26c4c68ef736c
 
     //SCANNER
     private static Scanner sn = new Scanner(System.in);
@@ -238,10 +242,15 @@ public class Main {
                         System.out.println("Casquete");
                         System.out.println("Ingrese el radio del circulo del casquete");
                         radio1 = sn.nextDouble();
+<<<<<<< HEAD
                         System.out.println("Ingrese el radio del casquete");
+=======
+                        System.out.println("Ingrese el radio2 del ciruclo del casquete");
+>>>>>>> 3deffbb44d1bb178c1d0aa7d15a26c4c68ef736c
                         radio2 = sn.nextDouble();
                         System.out.println("Ingrese la altura del casquete");
                         altura = sn.nextDouble();
+                        Casquete casquete = new Casquete(radio1,radio2,altura);
 
                         Casquete casquete = new Casquete(radio1, radio2,altura);
 
@@ -252,10 +261,13 @@ public class Main {
                         System.out.println("Volumen");
                         System.out.println(casquete.getVolumen());
                         System.out.println("");
+<<<<<<< HEAD
                         System.out.println("Radio del casquete");
                         System.out.println(casquete.getRadio_Casquete());
 
 
+=======
+>>>>>>> 3deffbb44d1bb178c1d0aa7d15a26c4c68ef736c
                     }
 
                     else if (opcion3 == 2){
@@ -264,8 +276,13 @@ public class Main {
                         radio1 = sn.nextDouble();
                         System.out.println("Ingrese la altura del cilindro");
                         altura = sn.nextDouble();
+<<<<<<< HEAD
                         
                         Cilindros cilindros = new Cilindros(radio1,altura);
+=======
+                        Cilindros cilindros = new Cilindros(radio1,altura);
+
+>>>>>>> 3deffbb44d1bb178c1d0aa7d15a26c4c68ef736c
 
                         System.out.println("");
                         System.out.println("Area");
@@ -275,7 +292,7 @@ public class Main {
                         System.out.println(cilindros.getVolumen());
                         System.out.println("");
                         System.out.println("Superficie lateral");
-                        System.out.println(cilindros.superficie_latera(radio1, altura));
+                        System.out.println(cilindros.superficie_latera(radio1,altura));
 
                     }
                     else if (opcion3 == 3) {
@@ -287,6 +304,7 @@ public class Main {
                         altura_inclinada = sn.nextDouble();
                         System.out.println("Ingrese la altura del cono");
                         altura = sn.nextDouble();
+                        Cono cono = new Cono(radio1,altura_inclinada,altura);
 
                         Cono cono = new Cono(altura,altura_inclinada,radio1);
 
@@ -298,7 +316,7 @@ public class Main {
                         System.out.println(cono.getVolumen());
                         System.out.println("");
                         System.out.println("Superficie lateral");
-                        System.out.println(cono.superficie_latera(radio1, altura));
+                        System.out.println(cono.superficie_latera(radio1,altura));
 
                     }
 
@@ -306,6 +324,7 @@ public class Main {
                         System.out.println("Cubo");
                         System.out.println("Ingrese el cuanto vale el lado de su cubo");
                         lado = sn.nextDouble();
+                        Cubos cubo = new Cubos(lado);
 
                         Cubos cubo = new Cubos(lado);
 
@@ -349,8 +368,11 @@ public class Main {
                         System.out.println("Volumen");
                         System.out.println(octahedro.getVolumen());
                         System.out.println("");
+<<<<<<< HEAD
                         System.out.println("Superficie");
                         System.out.println(octahedro.getArea());
+=======
+>>>>>>> 3deffbb44d1bb178c1d0aa7d15a26c4c68ef736c
 
                     }
                     else if (opcion3 == 7) {
@@ -359,6 +381,7 @@ public class Main {
                         lado = sn.nextDouble();
                         System.out.println("Ingrese la altura de su piramide");
                         altura = sn.nextDouble();
+                        Piramide piramide = new Piramide(lado,altura);
 
                         Piramide piramide = new Piramide(lado,altura);
 
@@ -379,6 +402,7 @@ public class Main {
                         lado = sn.nextDouble();
                         System.out.println("Ingrese la altura de su prisma");
                         altura = sn.nextDouble();
+                        Prisma_Triangular prisma_triangular = new Prisma_Triangular(lado,altura);
 
                         Prisma_Triangular prisma_triangular = new Prisma_Triangular(lado,altura);
 
@@ -399,6 +423,7 @@ public class Main {
                         base2 = sn.nextDouble();
                         System.out.println("Ingrese la altura del casquete");
                         altura = sn.nextDouble();
+                        Prismas_Rectangular prisma_rectangular = new Prismas_Rectangular(base1,base2,altura);
 
                         Prismas_Rectangular prisma_rectangular = new Prismas_Rectangular(base1,base2,altura);
 
@@ -417,6 +442,8 @@ public class Main {
                         lado = sn.nextDouble();
                         System.out.println("Ingrese la altura de su tetraedro");
                         altura = sn.nextDouble();
+                        Tetrahedro tetrahedro = new Tetrahedro(lado, altura);
+
 
                         Tetrahedro tetrahedro = new Tetrahedro(lado,altura);
 
@@ -427,8 +454,6 @@ public class Main {
                         System.out.println("Volumen");
                         System.out.println(tetrahedro.getVolumen());
                         System.out.println("");
-
-
                     }
 
                     opcion3 = menu_Geometria3D();
