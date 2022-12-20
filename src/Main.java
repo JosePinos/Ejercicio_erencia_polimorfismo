@@ -41,9 +41,6 @@ public class Main {
 
     //Figuras 3D
 
-
-    private static Tetrahedro tetrahedro = new Tetrahedro();
-
     //SCANNER
     private static Scanner sn = new Scanner(System.in);
 
@@ -402,16 +399,16 @@ public class Main {
                         lado = sn.nextDouble();
                         System.out.println("Ingrese la altura de su tetraedro");
                         altura = sn.nextDouble();
+                        Tetrahedro tetrahedro = new Tetrahedro(lado, altura);
+
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(tetrahedro.area(lado, altura));
+                        System.out.println(tetrahedro.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(tetrahedro.volumen(lado, altura));
+                        System.out.println(tetrahedro.getVolumen());
                         System.out.println("");
-
-
                     }
 
                     opcion3 = menu_Geometria3D();
