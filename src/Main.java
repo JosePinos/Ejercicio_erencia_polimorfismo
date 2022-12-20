@@ -42,10 +42,8 @@ public class Main {
     //Figuras 3D
 
 
-
-    private static Cubos cubo = new Cubos();
    
-    private static Octahedro octahedro = new Octahedro();
+
     private static Piramide piramide = new Piramide();
     private static Prisma_Triangular prisma_triangular = new Prisma_Triangular();
     private static Prismas_Rectangular prisma_rectangular = new Prismas_Rectangular();
@@ -304,13 +302,14 @@ public class Main {
                         System.out.println("Cubo");
                         System.out.println("Ingrese el cuanto vale el lado de su cubo");
                         lado = sn.nextDouble();
+                        Cubos cubo = new Cubos(lado);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(cubo.area(lado));
+                        System.out.println(cubo.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(cubo.volumen(lado));
+                        System.out.println(cubo.getVolumen());
                         System.out.println("");
                         System.out.println("Superficie");
                         System.out.println(cubo.superficie(lado));
@@ -336,16 +335,15 @@ public class Main {
                         System.out.println("Octaedro");
                         System.out.println("Ingrese el cuanto vale el lado de su octaedro");
                         lado = sn.nextDouble();
+                        Octahedro octahedro = new Octahedro(lado);
 
                         System.out.println("");
                         System.out.println("Area");
-                        System.out.println(octahedro.area(lado));
+                        System.out.println(octahedro.getArea());
                         System.out.println("");
                         System.out.println("Volumen");
-                        System.out.println(octahedro.altura(lado));
+                        System.out.println(octahedro.getVolumen());
                         System.out.println("");
-                        System.out.println("Superficie");
-                        System.out.println(octahedro.volumen(lado));
 
                     }
                     else if (opcion3 == 7) {
