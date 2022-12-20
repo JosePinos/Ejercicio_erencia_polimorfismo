@@ -1,17 +1,27 @@
 package Geometria3D;
 
-public class Cubos {
+public class Cubos extends Geometria3D{
     private double Lado;
     private final double Nlado = 6;
 
-    public double area (double lado){
+    public Cubos(double lado) {
         Lado = lado;
-        return Nlado * (Math.pow(Lado, 2));
+        area();
+        volumen();
     }
 
-    public double volumen(double lado){
-        Lado = lado;
-        return (Math.pow(Lado, 3));
+    public double getLado() {
+        return Lado;
+    }
+
+    @Override
+    protected void area (){
+        area = Nlado * (Math.pow(getLado(), 2));
+    }
+
+    @Override
+    protected void volumen(){
+        volumen = (Math.pow(getLado(), 3));
     }
 
     public double superficie (double lado){
